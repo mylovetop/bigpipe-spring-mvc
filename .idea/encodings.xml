@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/bigpipe/BigPipeContext.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/bigpipe/BigPipeTask.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/bigpipe/Pagelet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/bigpipe/PageletFinder.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/bigpipe/PageletResult.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/bigpipe/PageletView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/bigpipe/PageletViewResolver.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/bigpipe/finder/DefaultPageletFinder.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/bigpipe/handler/BigpipeTaskReturnValueHandler.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/bigpipe/view/AbstractPageletView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/bigpipe/view/velocity/AbstractVelocityPageletView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/bigpipe/view/velocity/VelocityFramePageletView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/bigpipe/view/velocity/VelocityPageletView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/bigpipe/view/velocity/VelocityPageletViewResolver.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/controller/bigpage/BigPipeController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/controller/bigpage/IndexPagelet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/controller/bigpage/Part1Pagelet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/controller/bigpage/Part2Pagelet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/controller/bigpage/Part3Pagelet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/controller/pipe/PipeController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/bigpipe" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/pipe" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/assets/bigpipe" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/assets/jquery.1.10.2.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/assets/pipe.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/assets/style.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/index.jsp" charset="UTF-8" />
+  </component>
+</project>
+

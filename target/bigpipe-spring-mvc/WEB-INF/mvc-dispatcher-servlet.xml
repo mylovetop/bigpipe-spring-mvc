@@ -1,0 +1,50 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <context:component-scan base-package="com.springapp.mvc"/>
+
+    <!--
+        <mvc:return-value-handlers>
+        允许注册实现了HandlerMethodReturnValueHandler接口的bean，来对handler method的特定的返回类型做处理
+        HandlerMethodReturnValueHandler接口中定义了两个方法
+            supportsReturnType 方法用来确定此实现类是否支持对应返回类型。
+            handleReturnValue 则用来处理具体的返回类型
+        例如以下的handlerMethod
+        @RequestMapping("/testReturnHandlers")
+        public User testHandlerReturnMethod(){
+            User u  = new User();
+            u.setUserName("test");
+            return u;
+        }
+        所返回的类型为一个pojo，正常情况下spring mvc无法解析，将转由DefaultRequestToViewNameTranslator 解析出一个缺省的view name，转到 testReturnHandlers.jsp.添加后返回类型为User
+    -->
+    <mvc:annotation-driven>
+        <mvc:return-value-handlers>
+            <bean class="com.springapp.mvc.bigpipe.handler.BigpipeTaskReturnValueHandler"></bean>
+        </mvc:return-value-handlers>
+    </mvc:annotation-driven>
+
+    <mvc:default-servlet-handler/>
+
+    <mvc:resources mapping="/static/**" location="/assets/"/>
+
+    <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer"></bean>
+    <bean class="com.springapp.mvc.bigpipe.finder.DefaultPageletFinder"/>
+    <bean class="com.springapp.mvc.bigpipe.view.velocity.VelocityPageletViewResolver">
+        <property name="prefix" value="bigpipe/"/>
+        <property name="suffix" value=".vm"/>
+        <property name="encoding" value="utf-8"/>
+        <property name="contentType" value="text/html;charset=utf-8"/>
+    </bean>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/pages/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+</beans>
